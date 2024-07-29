@@ -1,14 +1,25 @@
 body {
     font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
     max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    line-height: 1.5;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 header, footer {
     background-color: #f8f8f8;
-    text-align: center;
     padding: 10px 0;
 }
 
@@ -23,19 +34,16 @@ h2 {
     color: #333;
 }
 
-h3 {
-    font-size: 1.2em;
-    color: #666;
-}
-
 p {
     text-align: left;
     max-width: 50em;
+    margin: 0 auto;
 }
 
 ul {
     list-style-type: disc;
     padding-left: 20px;
+    text-align: left;
 }
 
 a {
@@ -49,19 +57,14 @@ a:hover {
 
 .attraction {
     float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    width: 45%;
+    margin: 2.5%;
     text-align: center;
 }
 
 .attraction img {
     max-width: 100%;
     height: auto;
-}
-
-footer p {
-    margin: 0;
-    padding: 10px;
 }
 
 .clearfix::after {
@@ -77,4 +80,9 @@ cite {
 
 cite a {
     color: #0073e6;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
 }
